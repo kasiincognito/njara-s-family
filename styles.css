@@ -1,0 +1,63 @@
+body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(rgb(80, 255, 232),rgb(37, 154, 250));
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#title{
+    font-family:KG Summer Sunshine;
+    color:rgb(49, 49, 220);
+    font-size:50px;
+    z-index:3;
+}
+div{
+    position:absolute;
+    background:linear-gradient(30deg,rgb(37, 154, 250),rgb(80, 255, 232));
+    border-radius:50%;
+    z-index:1;
+}
+#ball1{
+    top:90px;
+    left:10px;
+    height:100px;
+    width:100px;
+    animation-name:ball1;
+    animation-iteration-count:infinite;
+    animation-duration:4s;
+}
+#ball2{
+    top:250px;
+    right:-40px;
+    height:200px;
+    width:200px;
+    animation-name:ball2;
+    animation-iteration-count:infinite;
+    animation-duration:5s;
+}
+section{
+    z-index:3;
+    position:relative;
+    border-radius:20px;
+    margin:20px;
+    opacity:0.5;
+    width:90%;
+    height:300px;
+    background-color:rgb(37, 124, 255);
+}
+@media only screen and (max-width:600px) {
+    #title{
+        font-size:32px;
+    }
+}
+@keyframes ball1 {
+    0%{top:90px;}
+    50%{top:75;}
+    100%{top:90px;}
+}
+@keyframes ball2 {
+    0%{top:250px;}
+    50%{top:260px;}
+    100%{top:250px;}
+}
